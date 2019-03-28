@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import uuid from 'uuid';
 import {
   Button,
   Modal,
@@ -34,7 +33,6 @@ class ItemModel extends Component{
   onSubmit = (e) =>{
     e.preventDefault();
     const newItem = {
-      id: uuid(),
       name: this.state.name
     }
 
